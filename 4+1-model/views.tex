@@ -1,0 +1,67 @@
+\documentclass[dutch]{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[a4paper,top=20mm,bottom=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage[style=apa]{biblatex}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+\usepackage{subfiles} % Moet als laatst geladen worden in preamble
+
+% Voys kleuren. Bron: Voys Brand Manual 2021.pdf
+\definecolor{VoysBlue}{RGB}{39, 5, 151}
+\definecolor{ModernLime}{RGB}{74, 217, 56}
+\definecolor{Aqua}{RGB}{0, 255, 255}
+\definecolor{Coral}{RGB}{255, 77, 91}
+\definecolor{Ice}{RGB}{240, 240, 250}
+\definecolor{RegalFrost}{RGB}{183, 178, 248}
+\definecolor{RoyalBlue}{RGB}{59, 20, 185}
+
+% Hyperlinkstijl
+\hypersetup{
+  colorlinks,
+  citecolor=VoysBlue,
+  linkcolor=VoysBlue,
+  urlcolor=VoysBlue
+}
+
+% Bibliografie
+\addbibresource{../globalrefs.bib}
+
+% Stel frame padding in, vaak gebruikt rondom afbeeldingen
+\fboxsep=4pt
+
+\title{4+1 Model Views voor Single Source of Truth}
+\author{Marijn Kok}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Inleiding}
+\subfile{sections/introduction.tex}
+
+\section{Logical views}
+\subfile{sections/logical_views.tex}
+
+\section{Process views}
+\subfile{sections/process_views.tex}
+
+\section{Development views}
+\subfile{sections/development_views.tex}
+
+\section{Physical views}
+\subfile{sections/physical_views.tex}
+
+\section{Scenarios}
+\subfile{sections/scenarios.tex}
+
+\printbibliography
+
+\end{document}

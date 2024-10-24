@@ -1,0 +1,17 @@
+\documentclass[../report.tex]{subfiles}
+
+\begin{document}
+
+Dit hoofdstuk werpt een blik op het proces van het realiseren van de Single Source of Truth (\gls*{SSOT}) voor server specificaties. Het bespreekt ook wat er verder geleerd is tijdens het maken van dit product.
+
+De \gls*{SSOT}-applicatie heeft potentie om daadwerkelijk nuttig te zijn. Zo worden gebruikers in staat gesteld om snel en gemakkelijk te zien welke servers welke specificaties hebben. Dit is een stuk gemakkelijker dan het opzoeken van de specificaties van een server in de verschillende documenten die Voys heeft, of zelfs door in te loggen op een server en de specificaties daar op te zoeken.
+
+Dit project was niet mogelijk geweest zonder een goed projectplan. Perfect was het echter niet. Het aantal incrementen per \gls*{sprint} was bijvoorbeeld niet altijd goed ingeschat. Dit kwam doordat de werkdruk en stress toenam toen belangrijke ontwerpkeuzes gemaakt moesten worden.
+
+Als in de toekomst een soortgelijk project gerealiseerd zou worden, zou ik aanraden om gebruik te maken van reeds bestaande software waar mogelijk, zoals NetBox. Zo wordt er op standaarden ingehaakt en hoeft het wiel niet opnieuw uitgevonden te worden. Andere applicaties zouden bovendien ook op de applicatie kunnen inhaken. De keuze om dit niet te maken heeft het volledige traject in een andere richting gestuurd. Het voordeel hiervan is dat het preciezer naar de wens van de opdrachtgever gemaakt kon worden, maar het nadeel is dat er veel tijd in het ontwikkelen van de API en webapplicatie is gaan zitten. Het is echter onbekend welke problemen er in de praktijk zouden zijn ontstaan als er gebruik was gemaakt van NetBox.
+
+Ik ben trots op het feit dat het project voor mijn gevoel vrijwel volledig geïmplementeerd is. De collector en API maken gebruiken van \gls*{Go}, wat ze snel en efficiënt maakt. Het dashboard blijkt ook intuïtief uit het onderzoek, iets wat niet vanzelfsprekend is. Beperkingen van het product zijn echter dat er enige technische limitaties lijken te zijn, zoals sorteren van arbitraire kolommen in de tabel. Dit werd al snel duidelijk bij feedback over de applicatie. Dit zou voorkomen kunnen worden als gebruik gemaakt was van NetBox.
+
+Al met al is het een interessant project geweest. Het leren van de programmeertaal \gls*{Go} en het ontwikkelen van een webapplicatie met \gls*{Preact} en \gls*{Tailwinds} waren allemaal nieuwe ervaringen. Het was ook interessant om te zien hoe een project als dit in de praktijk verloopt. Het is een leerzame ervaring geweest.
+
+\end{document}

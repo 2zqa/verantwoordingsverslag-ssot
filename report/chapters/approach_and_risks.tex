@@ -1,0 +1,74 @@
+\documentclass[../report.tex]{subfiles}
+
+\begin{document}
+
+Bij het ontwikkelen van de producten is projectmatig gewerkt. Dit houdt in dat van tevoren is bedacht hoe het project ontwikkeld zal worden. Ook zijn risico's in kaart gebracht. In dit hoofdstuk worden de projectaanpak en de risico's van dit project besproken.
+
+\section{Projectaanpak}
+
+Om projectmatig aan de slag te gaan is ervoor gekozen om met \gls*{Scrum} te werken. Dit is een manier van \gls*{Agile} werken. Bij dit project is ervoor gekozen om \glspl*{sprint} een week te laten duren. Elke week wordt met de \gls*{product owner} bijeengekomen om de backlog en de voortgang te bespreken. Door deze bijeenkomsten kan de \gls*{product owner} het project bijsturen en kunnen de juiste prioriteiten gesteld worden.
+
+Het e-boek \textit{Lets Go Further} van Alex Edwards\footnote{\textit{Lets Go Further} is verkrijgbaar op \url{https://lets-go-further.alexedwards.net}.} is gebruikt als literatuur om de \gls*{Go}-projecten te realiseren. Het boek is gekozen omdat het een goede uitleg geeft over de opbouw van een \gls*{API} in de programmeertaal \gls*{Go} van begin tot eind, wat goed aansluit bij het project. Bovendien geeft het ook algemene adviezen over het ontwikkelen in \gls*{Go}, wat nuttig is voor de andere programma's.
+
+\section{Tooling}
+
+Om de producten te schrijven is voor de ontwikkelomgeving Visual Studio Code gekozen, onder andere omdat het veel programmeertalen (en meer\footnote{Dit verslag is ook in Visual Studio Code geschreven.}) ondersteunt en omdat het debuggen van programma's makkelijk maakt.
+
+Voor code-opslag, code reviews en \gls*{CI/CD} wordt GitLab gebruikt, omdat dit reeds door Voys verschaft wordt.
+
+Omdat de programma's allemaal met één datamodel werken, wordt gebruik gemaakt van codegeneratie. Dit houdt in dat er een specificatie is van het datamodel, waar vervolgens automatisch code van gegenereerd wordt. Met de code kan bijvoorbeeld de data gemakkelijk en veilig verstuurd worden. Er is voor codegeneratie gekozen omdat het veel tijd bespaart op lange termijn en het de kans op fouten verkleint. Voor deze codegeneratie wordt gebruik gemaakt van de tool \gls*{OpenAPI} Generator, en de specificatie is in het \gls*{OpenAPI} formaat.
+
+\section{Tussenstappen}
+
+De tussenstappen die genomen zijn om de de \gls*{SSOT} te realiseren zijn als volgt:
+
+\begin{enumerate}
+  \item De projectaanpak wordt bepaald.
+  \item Er wordt een lijst met requirements opgesteld.
+  \item Er wordt een ontwerp gemaakt van de architectuur van het project.
+  \item De opdracht wordt opgesplitst in drie programma's: een \gls*{server}, een collector en een dashboard.
+  \item Er wordt een datamodel ontworpen dat door de programma's gebruikt wordt.
+  \item De programma's worden gerealiseerd en deployed.
+  \item Er wordt een onderzoek gedaan naar gebruik van de \gls*{frontend}.
+\end{enumerate}
+
+\section{Risico's en beheersing}
+
+De risicomatrix is te vinden in een apart document \parencite{risks}. De volgende risico's zijn geïdentificeerd:
+
+\begin{enumerate}[R1]
+  \item \label{itm:R1} Het project wordt niet op tijd afgerond.
+  \item \label{itm:R2} \Gls*{scope creep}.
+  \item \label{itm:R3} Technische limieten.
+  \item \label{itm:R4} Kinderziektes in ontwerp.
+\end{enumerate}
+
+Om de risicofactor van een risico te bepalen, wordt de volgende formule gebruikt:
+
+\begin{displaymath}
+  r = k \cdot i
+\end{displaymath}
+
+waarbij $r$ de risicofactor, $k$ de kans en $i$ de impact is. De impact en kans worden gemeten op een schaal van 1 tot en met 5, waar 1 erg klein is en 5 erg groot. Hieruit volgt dat de risicofactor op een schaal van 1 tot en met 25 gemeten wordt, waar 1 een erg klein risico is en 25 een erg groot risico is.
+
+\subsection{Tijdstekort}
+
+De kans op tijdstekort (\hyperref[itm:R1]{R1}) is klein, omdat er voldoende ruimte is om het project te verlengen als dit nodig is. De impact is wel groot, doordat het project dan niet volledig afgerond is. De risicofactor is dus $2 \cdot 4 = 8$. Maatregelen voor de beheersing van dit riscio zijn de projectdeadlines in de gaten te houden en de \gls*{product owner} op de hoogte te houden van deze deadlines. Verder kan uitstel van het project worden aangevraagd als dit nodig is.
+
+\subsection{Scope creep}
+
+Evenals tijdstekort is de kans op scope creep (\hyperref[itm:R2]{R2}) klein. De impact is echter ook klein omdat de backlog geprioriteerd is en de \gls*{product owner} het project kan bijsturen. Met deze twee maatregelen wordt tevens het risico beheerst. De risicofactor is $2 \cdot 2 = 4$.
+
+\subsection{Technische limieten}
+
+De risicofactor van technische limieten (\hyperref[itm:R3]{R3}) is niet te bepalen, doordat niet van tevoren bekend is wat de technische limieten zijn. Hierdoor is het een \textit{known unknown}. Als een technische limitatie wordt aangetroffen, kan als maatregel hulp gevraagd worden aan collega's, zodat alternatieven besproken kunnen worden. Als er geen goed alternatief gevonden kan worden, wordt dit aan de \gls*{product owner} voorgelegd.
+
+\subsection{Kinderziektes}
+
+De kans op kinderziektes (\hyperref[itm:R4]{R4}) in het ontwerp is klein. Er wordt weliswaar met nieuwe technologieën gewerkt, maar als maatregel wordt de code gereviewt zodat dergelijke fouten eruitgehaald kunnen worden. De impact, mochten kinderziektes er desondanks insluipen, is alsnog klein. Kinderziektes kunnen namelijk alsnog verbeterd worden voor het project voorbij is als ze later aangetroffen worden. De risicofactor is hierdoor $2 \cdot 2 = 4$.
+
+% \section{Slot}
+
+% Door de projectmatige aanpak kunnen de producten behapbaarder worden ontwikkeld. Met de \gls*{Scrum}-methode en technische tools Visual Studio Code, GitLab, code generatie en Docker wordt dit ondersteund. De risico's zijn in een overzicht gezet zodat deze beheerst kunnen worden. Het product is gerealiseerd met requirements. Hoe deze zijn verkregen, wordt besproken in het volgende hoofdstuk.
+
+\end{document}

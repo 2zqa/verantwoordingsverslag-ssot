@@ -1,0 +1,13 @@
+\documentclass[../report.tex]{subfiles}
+
+\begin{document}
+
+Dit verantwoordingsverslag beschrijft de aanpak en resultaten van een afstudeerproject bij Voys, gericht op het ontwikkelen van een Single Source of Truth (SSOT) dashboard voor het weergeven van serverinformatie. Het project bestaat uit drie onderdelen: een collector applicatie (ssot-specs-collector) die hardwaregegevens van servers verzamelt en verstuurt naar een API, een API (ssot-specs-server) voor het opslaan en teruggeven van de gegevens, en een webapplicatie (infra-ssot-dashboard) om de gegevens te tonen, ontwikkeld in TypeScript met Preact. De producten maken gebruik van een specificatie, een zogehete ``\gls*{OpenAPI-specificatie}'', zodat van tevoren bekend is welke gegevens verzameld en getoond kunnen worden. Verder omvat de specificatie informatie over authenticatie en autorisatie.
+
+Het project is met Scrum uitgevoerd, en requirements zijn opgesteld door middel van interviews met stakeholders.
+
+De applicaties zijn nog niet deployed, maar kunnen deployed worden met behulp van een virtuele machine, Salt, systemd, een webserver en een reverse proxy voor beveiliging. Validatie kan plaatsvinden met Sentry, systemd, Loki, Promtail en Grafana.
+
+Er is ook een onderzoek uitgevoerd naar de validiteit van het project. Dit onderzoek is uitgevoerd door middel van een enquête en observatie. De enquête is ingevuld door vier medewerkers van Voys. Uit het onderzoek bleek dat de applicatie aan tien van de vijftien user stories voldoet, en dat verbeterpunten vooral te vinden zijn bij het ontwerp van de applicatie.
+
+\end{document}

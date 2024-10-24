@@ -1,0 +1,21 @@
+\documentclass[../report.tex]{subfiles}
+
+\begin{document}
+
+Zonder het deployen van de applicaties kunnen ze niet gebruikt worden, en zonder validatie en beheer is onduidelijk of de applicaties goed werken en goed blijven werken. De applicaties zijn nog niet deployed, maar in dit hoofdstuk omschrijft hoe ze deployed zouden kunnen worden.
+
+\section{Deployment}
+
+De \gls*{API} en database kan gehost worden op een virtuele machine (VM) op Proxmox, een programma dat servers beheert. De VM kan in het interne netwerk van Voys draaien, zodat het niet gemakkelijk door aanvallers van buitenaf aangevallen kan worden. Met behulp van een reverse proxy kan een beveiligde verbinding opgezet worden tussen de VM en de collectors.
+
+De collector moet regelmatig gestart worden om de gegevens up-to-date te houden. Dit kan met behulp van systemd. Het moet ook binnen het netwerk van Voys draaien zodat het gegevens kan versturen. De \gls*{API}- en de collectorconfiguraties kunnen met \gls*{Salt} geconfigureerd worden.
+
+Het dashboard kan gehost worden op een simpele webserver. Het dashboard kan met een beveiligide verbinding opgezet worden zodat gegevens tussen de het dashboard en de eindgebruiker veilig verstuurd worden.
+
+\section{Validatie en beheer}
+
+Applicaties kunnen gemonitord worden door logberichten en foutmeldingen te controleren. Foutmeldingen kunnen met Sentry verzameld worden, en logberichten kunnen met Promtail en Loki naar Grafana gestuurd worden. Alle genoemde applicaties in deze paragraaf worden reeds door Voys verstrekt. Verder kan de \gls*{API} een Prometheus-endpoint aanbieden waarop de status van de API te zien is. Deze statistieken kunnen dan ook in Grafana bekeken en geanalyseerd worden.
+
+Als validatie van het project is onderzocht of eindgebruikers met behulp van het gerealiseerde dashboard de opgestelde user stories daadwerkelijk kunnen uitvoeren. Dit onderzoek is beschreven in de bijlage \parencite{research_report}.
+
+\end{document}

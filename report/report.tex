@@ -1,0 +1,108 @@
+\documentclass[a4paper, dutch]{report}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[a4paper,top=20mm,bottom=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage[style=apa]{biblatex}
+\usepackage{enumerate}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[numberedsection=autolabel]{glossaries}
+\usepackage{subfiles} % Moet als laatst geladen worden in preamble
+
+% Voys kleuren. Bron: Voys Brand Manual 2021.pdf
+\definecolor{VoysBlue}{RGB}{39, 5, 151}
+\definecolor{ModernLime}{RGB}{74, 217, 56}
+\definecolor{Aqua}{RGB}{0, 255, 255}
+\definecolor{Coral}{RGB}{255, 77, 91}
+\definecolor{Ice}{RGB}{240, 240, 250}
+\definecolor{RegalFrost}{RGB}{183, 178, 248}
+\definecolor{RoyalBlue}{RGB}{59, 20, 185}
+
+% Hyperlinkstijl
+\hypersetup{
+  colorlinks,
+  citecolor=VoysBlue,
+  linkcolor=VoysBlue,
+  urlcolor=VoysBlue
+}
+
+% Woordenlijst
+\makeglossaries
+\loadglsentries{assets/glossaries.tex}
+
+% Bibliografie
+\addbibresource{refs.bib}
+\addbibresource{../globalrefs.bib}
+\setcounter{biburlnumpenalty}{1} % Zorgt ervoor dat urls afgebroken kunnen worden bij een nummer in de literatuurlijst
+
+% Titelpagina-info
+\title{Verantwoordingsverslag Single Source of Truth (SSOT)}
+\author{Marijn Kok}
+\date{\today}
+
+% Macro's
+\newcommand{\collector}{\texttt{ssot\--specs\--collector}}
+\newcommand{\server}{\texttt{ssot\--specs\--server}}
+\newcommand{\dashboard}{\texttt{infra\--ssot\--dashboard}}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Voorwoord}
+\label{ch:voorwoord}
+\subfile{chapters/preface.tex}
+
+\chapter*{Samenvatting}
+\subfile{chapters/summary.tex}
+
+\tableofcontents
+
+\chapter{Inleiding}
+\label{ch:introduction}
+\subfile{chapters/introduction.tex}
+
+% Inhoudelijke hoofdstukken
+\chapter{Projectaanpak en risico's}
+\label{ch:approach_and_risks}
+\subfile{chapters/approach_and_risks.tex}
+
+\chapter{Requirementsanalyse}
+\label{ch:requirements}
+\subfile{chapters/requirements.tex}
+
+\chapter{Ontwerp}
+\label{ch:design}
+\subfile{chapters/design.tex}
+
+\chapter{Realisatie}
+\label{ch:realization}
+\subfile{chapters/realization.tex}
+
+\chapter{Deployment, validatie en beheer}
+\label{ch:deployment_validation_management}
+\subfile{chapters/deployment_validation_management.tex}
+
+\chapter{HBO-I competenties}
+\label{ch:skills}
+\subfile{chapters/skills.tex}
+
+\chapter{Conclusie}
+\label{ch:conclusion}
+\subfile{chapters/conclusion.tex}
+
+\chapter{Lessons learned}
+\label{ch:lessons_learned}
+\subfile{chapters/lessons_learned.tex}
+
+\printbibliography
+
+\appendix
+
+\printglossary[title=Verklarende woordenlijst, toctitle=Verklarende woordenlijst]
+
+\end{document}

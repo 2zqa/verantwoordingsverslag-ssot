@@ -1,0 +1,61 @@
+<mxfile host="Electron" modified="2023-09-14T12:49:47.804Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="ONfyroQli9rIyTdwD_Uf" version="21.6.8" type="device">
+  <diagram name="Pagina-1" id="dcqe7loE3kVDFp3H9hva">
+    <mxGraphModel dx="1046" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-7" value="(1) JWT aanvragen" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-10" target="xjkbaKNH2kZN4p8Bl0JB-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="137.58620689655163" as="sourcePoint" />
+            <mxPoint x="430" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-10" value="Gebruiker:&lt;br&gt;Authentication" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-16" value="OIDC-autoriteit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-17" value="app.listDevices-Handler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-18" value="DeviceTable" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-19" value="(2) JWT retourneren" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-16" target="xjkbaKNH2kZN4p8Bl0JB-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="200" as="sourcePoint" />
+            <mxPoint x="370" y="88" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-20" value="(3) Devices aanvragen" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-18" target="xjkbaKNH2kZN4p8Bl0JB-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="120" as="sourcePoint" />
+            <mxPoint x="370" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-21" value="(6) Devices retourneren" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-17" target="xjkbaKNH2kZN4p8Bl0JB-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="200" as="sourcePoint" />
+            <mxPoint x="270" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-22" value="Postgres database" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-24" value="(4) Devices aanvragen" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-17" target="xjkbaKNH2kZN4p8Bl0JB-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="270" as="sourcePoint" />
+            <mxPoint x="430" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-25" value="(5) Devices retourneren" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-22" target="xjkbaKNH2kZN4p8Bl0JB-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="185" as="sourcePoint" />
+            <mxPoint x="520" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

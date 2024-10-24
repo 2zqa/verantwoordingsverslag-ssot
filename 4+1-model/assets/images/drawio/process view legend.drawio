@@ -1,0 +1,79 @@
+<mxfile host="Electron" modified="2023-09-07T09:56:15.463Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="wFV3qNHQE8WPHUucieLO" version="21.6.8" type="device">
+  <diagram name="Pagina-1" id="Nci2nzMG_4D5sn-CKkhA">
+    <mxGraphModel dx="152" dy="231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-7" value="Componenten" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-11" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry y="40" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-1" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillOpacity=100;arcSize=20;size=30;" vertex="1" parent="5qI-q-ehqjh6ZCzObYbo-11">
+          <mxGeometry x="20" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5qI-q-ehqjh6ZCzObYbo-11">
+          <mxGeometry x="20" y="25" width="50" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5qI-q-ehqjh6ZCzObYbo-11">
+          <mxGeometry x="10" y="45" width="50" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5qI-q-ehqjh6ZCzObYbo-11">
+          <mxGeometry y="65" width="50" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-13" value="Proces" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-14" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillOpacity=100;arcSize=20;size=30;" vertex="1" parent="1">
+          <mxGeometry x="15" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-16" value="Versimpeld proces" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-32" value="" style="group;fillColor=none;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="37.75" y="280" width="34.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-29" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="5qI-q-ehqjh6ZCzObYbo-32">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-31" value="" style="triangle;whiteSpace=wrap;html=1;rotation=90;strokeColor=none;fillColor=#000000;" vertex="1" parent="5qI-q-ehqjh6ZCzObYbo-32">
+          <mxGeometry x="27" y="13.5" width="6" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-33" value="Periodiek proces indicator" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-34" value="Connectoren" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-35" value="" style="endArrow=none;html=1;rounded=0;endFill=0;endSize=0;startSize=10;startArrow=none;startFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="60" as="sourcePoint" />
+            <mxPoint x="440" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-36" value="Ongespecificeerd" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-37" value="" style="endArrow=classic;html=1;rounded=0;endFill=1;endSize=10;startSize=10;startArrow=none;startFill=0;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="100" as="sourcePoint" />
+            <mxPoint x="440" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-38" value="Bericht" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-39" value="" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="140" as="sourcePoint" />
+            <mxPoint x="440" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5qI-q-ehqjh6ZCzObYbo-40" value="HTTP request" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2023-09-07T08:21:40.130Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="hIhSL-kjA52vXC3TS0EK" version="21.6.8" type="device">
+  <diagram name="Pagina-1" id="TuN3eTU1W8H9ib2j25hs">
+    <mxGraphModel dx="585" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lbx1Io-jNpmrYH52EymP-6" value="Functie" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" parent="1" vertex="1">
+          <mxGeometry x="160" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lbx1Io-jNpmrYH52EymP-8" value="" style="endArrow=none;html=1;rounded=0;endFill=0;endSize=0;startSize=10;startArrow=oval;startFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="60" as="sourcePoint" />
+            <mxPoint x="440" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbx1Io-jNpmrYH52EymP-9" value="Bron (links) roept doel (rechts) aan" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" parent="1" vertex="1">
+          <mxGeometry x="480" y="40" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbx1Io-jNpmrYH52EymP-14" value="Componenten" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbx1Io-jNpmrYH52EymP-15" value="Connectoren" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="320" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="70-bhESrCyd01xKUN2j7-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="70-bhESrCyd01xKUN2j7-3" value="Struct" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" parent="1" vertex="1">
+          <mxGeometry x="160" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="70-bhESrCyd01xKUN2j7-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;absoluteArcSize=0;" parent="1" vertex="1">
+          <mxGeometry y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MTk7DkbJX8Ruv_5uvf0b-1" value="" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=0;arcSize=36;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MTk7DkbJX8Ruv_5uvf0b-2" value="Functie van interface" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

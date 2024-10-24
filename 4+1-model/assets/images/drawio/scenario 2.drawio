@@ -1,0 +1,32 @@
+<mxfile host="Electron" modified="2023-09-14T14:21:13.967Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="AY_IHvlAsdIyI7WwdSY9" version="21.6.8" type="device">
+  <diagram name="Pagina-1" id="dcqe7loE3kVDFp3H9hva">
+    <mxGraphModel dx="1046" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-7" value="(1) collector aanroepen" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;fontStyle=0" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-10" target="xjkbaKNH2kZN4p8Bl0JB-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="70" as="sourcePoint" />
+            <mxPoint x="350" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-10" value="Systemd" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-27" value="collector" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-28" value="API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xjkbaKNH2kZN4p8Bl0JB-29" value="(3) Verzend specificaties&lt;br&gt;naar API" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=none;startFill=0;strokeWidth=1;shape=flexArrow;endSize=5.153846153846154;endWidth=10;fillColor=#000000;strokeColor=none;fontSize=11;fillStyle=solid;width=5;fontStyle=0" edge="1" parent="1" source="xjkbaKNH2kZN4p8Bl0JB-27" target="xjkbaKNH2kZN4p8Bl0JB-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="200" as="sourcePoint" />
+            <mxPoint x="210" y="200" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

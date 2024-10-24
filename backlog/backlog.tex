@@ -1,0 +1,170 @@
+\documentclass[dutch]{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[a4paper,top=20mm,bottom=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usepackage{longtable}
+\usepackage{babel}
+
+\useunder{\uline}{\ul}{} % For booktabs
+
+\begin{document}
+
+De backlog is bijgewerkt tot en met 7 augustus 2023.
+
+% Data gegenereerd op https://voipgrid.atlassian.net/browse/SOT-138?jql=project%20%3D%20SOT%20AND%20created%20%3C%3D%20-0m%20order%20by%20created%20DESC en geëxporteerd als csv
+%
+% Tabel gegenereerd door https://www.tablesgenerator.com/. Gebruikte instellingen:
+% * Table style: booktabs
+% * Scale table to text width
+% * Split table in multiple pages
+% * Repeat header (top rows) on every page
+% * Add table continuation header
+%
+% Vervolgens op tweede kolom l vervangen met p{6cm}.
+% En "Table \thetable" hernoemd naar "Tabel \thetable"
+\begin{longtable}{@{}lp{6cm}l@{}}
+    \toprule
+    \textbf{Issue key} & \textbf{Summary}                                                                                                          & \textbf{Status} \\* \midrule
+    \endfirsthead
+    %
+    \multicolumn{3}{c}%
+    {{\bfseries Tabel \thetable\ vervolg van de vorige pagina}}                                                                                                      \\
+    \toprule
+    \textbf{Issue key} & \textbf{Summary}                                                                                                          & \textbf{Status} \\* \midrule
+    \endhead
+    %
+    \bottomrule
+    \endfoot
+    %
+    \endlastfoot
+    %
+    SOT-138            & Replace homebrew config with peterbourogn/ff                                                                              & To Do           \\
+    SOT-137            & Add authorization to endpoints                                                                                            & To Do           \\
+    SOT-136            & Logout button                                                                                                             & To Do           \\
+    SOT-135            & Token renewal                                                                                                             & To Do           \\
+    SOT-134            & Error handling at denying oauth login                                                                                     & To Do           \\
+    SOT-133            & Error handling invalid requests                                                                                           & To Do           \\
+    SOT-132            & Deployment, validation and management chapter                                                                             & To Do           \\
+    SOT-131            & Realisation chapter                                                                                                       & To Do           \\
+    SOT-130            & Add sentry SDK                                                                                                            & To Do           \\
+    SOT-129            & Add sentry SDK                                                                                                            & To Do           \\
+    SOT-128            & Add sentry SDK                                                                                                            & To Do           \\
+    SOT-127            & Sections in Device Detail page for disks                                                                                  & To Do           \\
+    SOT-126            & Support partial word search                                                                                               & To Do           \\
+    SOT-125            & Use fuzzy searching                                                                                                       & To Do           \\
+    SOT-124            & Add glossary                                                                                                              & To Do           \\
+    SOT-123            & Update sent data to server                                                                                                & In Review       \\
+    SOT-122            & Send all data defined in openapi spec                                                                                     & Done            \\
+    SOT-121            & Fix naming errors in collector                                                                                            & Done            \\
+    SOT-119            & Design chapter                                                                                                            & To Do           \\
+    SOT-118            & Requirement analysis chapter                                                                                              & In Progress     \\
+    SOT-117            & Support CORS                                                                                                              & Done            \\
+    SOT-116            & Check for any discrepancies against collector in openapi spec                                                             & In Review       \\
+    SOT-115            & Check for any discrepancies against collector                                                                             & In Progress     \\
+    SOT-114            & Check for any discrepancies against collector                                                                             & In Review       \\
+    SOT-113            & Keep PDF artefacts on commit                                                                                              & To Do           \\
+    SOT-112            & Don't save refresh token                                                                                                  & Done            \\
+    SOT-111            & Gitlab pipeline voor packaging                                                                                            & Done            \\
+    SOT-110            & Gitlab pipeline voor packaging                                                                                            & Done            \\
+    SOT-109            & Gitlab pipeline voor packaging                                                                                            & To Do           \\
+    SOT-108            & Create approach and risks chapter                                                                                         & Done            \\
+    SOT-107            & Make notes of what to include in each chapter                                                                             & Done            \\
+    SOT-106            & Add all planned chapters to index                                                                                         & Done            \\
+    SOT-105            & Find relevant terminology for research in the Good Research Guide book                                                    & Done            \\
+    SOT-104            & Verify date formats of BIOS                                                                                               & To Do           \\
+    SOT-103            & Format bios date to ISO 8601 compliant YYYY-MM-DD format                                                                  & To Do           \\
+    SOT-102            & Change bios to ISO 8601 compliant YYYY-MM-DD format in openAPI spec                                                       & To Do           \\
+    SOT-101            & Change uptime to boottime in openAPI spec                                                                                 & Done            \\
+    SOT-100            & Add authentication in OpenAPI spec                                                                                        & Done            \\
+    SOT-99             & Add static key authentication                                                                                             & Done            \\
+    SOT-98             & Fix device page not loading and pagination function syntax                                                                & In Review       \\
+    SOT-97             & Flexbox/dashboard style displaying of cards in detail view                                                                & Done            \\
+    SOT-96             & Add all missing columns to table                                                                                          & In Review       \\
+    SOT-95             & Change uptime to timestamp of boot                                                                                        & Done            \\
+    SOT-94             & Authenticate with Mutual TLS                                                                                              & To Do           \\
+    SOT-93             & Deploy demo on a server                                                                                                   & To Do           \\
+    SOT-92             & Deploy on production                                                                                                      & To Do           \\
+    SOT-91             & Deploy on production                                                                                                      & To Do           \\
+    SOT-90             & Collect ipmi information                                                                                                  & To Do           \\
+    SOT-89             & Add login with GitLab login-screen                                                                                        & In Review       \\
+    SOT-88             & Authenticate queries with static keys                                                                                     & Done            \\
+    SOT-87             & Add search functionality                                                                                                  & To Do           \\
+    SOT-86             & Export a device's data in Details View                                                                                    & To Do           \\
+    SOT-85             & Add sorting to table                                                                                                      & Done            \\
+    SOT-84             & Add column filtering to table                                                                                             & Done            \\
+    SOT-83             & Add pagination to table                                                                                                   & Done            \\
+    SOT-82             & Add GitLab authentication                                                                                                 & Done            \\
+    SOT-81             & Fix nil pointer dereference panic in CPU                                                                                  & Done            \\
+    SOT-80             & Fix disks not being preloaded                                                                                             & Done            \\
+    SOT-79             & Update openapi spec to include pagination and new specs                                                                   & Done            \\
+    SOT-78             & Format date as YYYY-MM-dd HH:mm:ss in table                                                                               & Done            \\
+    SOT-77             & Log any errors from API                                                                                                   & Done            \\
+    SOT-76             & Add search functionality                                                                                                  & Done            \\
+    SOT-75             & Add graceful shutdown (12 LGF)                                                                                            & Done            \\
+    SOT-73             & Add structured logging and error handling (10 LGF)                                                                        & Done            \\
+    SOT-72             & Implement filtering, Sorting, and Pagination                                                                              & Done            \\
+    SOT-71             & Add timeouts to queries (8.3 LGF)                                                                                         & Done            \\
+    SOT-70             & Refactor New* functions to Fetch* and make them return errors                                                             & Done            \\
+    SOT-69             & Upload PGP key to keys.openpgp.org                                                                                        & Done            \\
+    SOT-68             & Verify commits using GPG                                                                                                  & Done            \\
+    SOT-67             & Use typed objects in table                                                                                                & Done            \\
+    SOT-66             & Use hash-based routing                                                                                                    & Done            \\
+    SOT-65             & Use existing logger object in DB logger                                                                                   & Done            \\
+    SOT-64             & Refactor specs collection                                                                                                 & Done            \\
+    SOT-63             & Fix data not returning because of Preloads                                                                                & Done            \\
+    SOT-62             & Protect branches from direct commits                                                                                      & Done            \\
+    SOT-61             & Use hashing router                                                                                                        & Done            \\
+    SOT-60             & Remove ssot from server repository                                                                                        & Done            \\
+    SOT-59             & Update openapi spec                                                                                                       & Done            \\
+    SOT-58             & Upload OpenAPI spec to voipgrid/openapi repo                                                                              & Done            \\
+    SOT-57             & Remove IDE "cruft"                                                                                                        & Done            \\
+    SOT-56             & Fix SonarQube container URL in gitlab CI                                                                                  & Done            \\
+    SOT-55             & Set up SonarQube CI                                                                                                       & Done            \\
+    SOT-54             & Show device object in /device/:uuid page                                                                                  & Done            \\
+    SOT-53             & Improve error handling                                                                                                    & Done            \\
+    SOT-52             & Implement concurrency control                                                                                             & Done            \\
+    SOT-51             & Make openapi spec reflect reality again                                                                                   & Done            \\
+    SOT-50             & Send data through api client                                                                                              & Done            \\
+    SOT-49             & Add validation checks for all specs                                                                                       & Done            \\
+    SOT-48             & Delete before every insertion in DB                                                                                       & Done            \\
+    SOT-47             & Security: check whether specific IDs can be entered during creation/updating for specs object (or further nested objects) & Done            \\
+    SOT-46             & Add other specs                                                                                                           & Done            \\
+    SOT-45             & Show data in rudimentary way                                                                                              & Done            \\
+    SOT-44             & Generate code                                                                                                             & Done            \\
+    SOT-43             & Add test for updateOrInsertDevice                                                                                         & Done            \\
+    SOT-42             & Refactor updateOrInsertDevice to not return status codes                                                                  & Done            \\
+    SOT-41             & Re-create POST endpoint                                                                                                   & Done            \\
+    SOT-40             & Automatically set last\_updated\_at field in database devices table                                                       & Done            \\
+    SOT-39             & Add+retrieve specs in database                                                                                            & Done            \\
+    SOT-38             & Add enveloping to openapi spec                                                                                            & Done            \\
+    SOT-37             & Make api specific                                                                                                         & Done            \\
+    SOT-36             & Collect disk total storage size                                                                                           & Done            \\
+    SOT-35             & Add descriptions to OpenAPI schema                                                                                        & Done            \\
+    SOT-33             & Use github.com/peterbourgon/ff for setting config                                                                         & Done            \\
+    SOT-29             & Update database design to have less duplication                                                                           & Done            \\
+    SOT-28             & Use client to send data to API                                                                                            & Done            \\
+    SOT-27             & Implement chapter 7 lets go further                                                                                       & Done            \\
+    SOT-24             & Validate creation of component and component value structs                                                                & Done            \\
+    SOT-21             & Add CI/CD                                                                                                                 & Done            \\
+    SOT-19             & report                                                                                                                    & To Do           \\
+    SOT-18             & Use structs                                                                                                               & Done            \\
+    SOT-17             & Collect inodes                                                                                                            & To Do           \\
+    SOT-16             & Collect hardware info                                                                                                     & Done            \\
+    SOT-15             & Collect Salt information                                                                                                  & To Do           \\
+    SOT-14             & Fix error handling in fetchCPU                                                                                            & Done            \\
+    SOT-13             & Use generic JSON                                                                                                          & Done            \\
+    SOT-12             & Add timestamp to metadata                                                                                                 & Done            \\
+    SOT-11             & Add list of fetch errors to metadata                                                                                      & Done            \\
+    SOT-10             & Change "unknown" to an empty string if motherboard serial number cannot be detected                                       & Done            \\
+    SOT-9              & Collect SSH keys                                                                                                          & To Do           \\
+    SOT-8              & Collect APT keys                                                                                                          & To Do           \\
+    SOT-6              & Collect interface driver info                                                                                             & Done            \\
+    SOT-5              & Collect memory modules speed                                                                                              & Done            \\
+    SOT-4              & collector                                                                                                                 & To Do           \\
+    SOT-3              & frontend                                                                                                                  & To Do           \\
+    SOT-2              & server                                                                                                                    & To Do           \\* \bottomrule
+\end{longtable}
+
+\end{document}

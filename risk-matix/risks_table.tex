@@ -1,0 +1,36 @@
+\documentclass[dutch]{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[a4paper,top=20mm,bottom=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{babel}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+
+\begin{document}
+
+\begin{table}[!h]
+    \begin{tabular}{ll|lllll|}
+        \cline{3-7}
+                                                     & \multicolumn{1}{c|}{} & \multicolumn{5}{c|}{Impact}                                                                                                                                                                      \\ \cline{3-7}
+                                                     &                       & \multicolumn{1}{l|}{Erg klein}          & \multicolumn{1}{l|}{Klein}                    & \multicolumn{1}{l|}{Gemiddeld}          & \multicolumn{1}{l|}{Groot}              & Erg groot          \\ \hline
+        \multicolumn{1}{|l|}{}                       & Erg groot             & \multicolumn{1}{l|}{\cellcolor{orange}} & \multicolumn{1}{l|}{\cellcolor{red}}          & \multicolumn{1}{l|}{\cellcolor{red}}    & \multicolumn{1}{l|}{\cellcolor{purple}} & \cellcolor{purple} \\ \cline{2-7}
+        \multicolumn{1}{|l|}{}                       & Groot                 & \multicolumn{1}{l|}{\cellcolor{orange}} & \multicolumn{1}{l|}{\cellcolor{orange}}       & \multicolumn{1}{l|}{\cellcolor{red}}    & \multicolumn{1}{l|}{\cellcolor{purple}} & \cellcolor{purple} \\ \cline{2-7}
+        \multicolumn{1}{|l|}{}                       & Gemiddeld             & \multicolumn{1}{l|}{\cellcolor{green}}  & \multicolumn{1}{l|}{\cellcolor{orange}}       & \multicolumn{1}{l|}{\cellcolor{red}}    & \multicolumn{1}{l|}{\cellcolor{red}}    & \cellcolor{purple} \\ \cline{2-7}
+        \multicolumn{1}{|l|}{}                       & Klein                 & \multicolumn{1}{l|}{\cellcolor{green}}  & \multicolumn{1}{l|}{\cellcolor{orange}R2, R4} & \multicolumn{1}{l|}{\cellcolor{orange}} & \multicolumn{1}{l|}{\cellcolor{red}R1}  & \cellcolor{red}    \\ \cline{2-7}
+        \multicolumn{1}{|l|}{\multirow{-5}{*}{Kans}} & Erg klein             & \multicolumn{1}{l|}{\cellcolor{green}}  & \multicolumn{1}{l|}{\cellcolor{green}}        & \multicolumn{1}{l|}{\cellcolor{orange}} & \multicolumn{1}{l|}{\cellcolor{orange}} & \cellcolor{red}    \\ \hline
+    \end{tabular}
+    \caption{\label{tab:risks-table}Geïdentificeerde risico's in een risicomatrix.}
+\end{table}
+
+\begin{table}[!h]
+    \begin{tabular}{lll}
+        \textbf{Risicoscore} & \textbf{Omschrijving} & \textbf{Kleur} \\
+        $\le3$               & Erg klein             & Groen          \\
+        $>3\land\le9$        & Klein                 & Oranje         \\
+        $>9\land\le15$       & Groot                 & Rood           \\
+        $>15$                & Erg groot             & Paars
+    \end{tabular}
+    \caption{\label{tab:risks-legend}Legenda}
+\end{table}
+
+\end{document}

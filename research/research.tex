@@ -1,0 +1,140 @@
+\documentclass[a4paper, dutch]{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[a4paper,top=20mm,bottom=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage[style=apa]{biblatex}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{subfiles} % Moet als laatst geladen worden in preamble
+
+% Voys kleuren. Bron: Voys Brand Manual 2021.pdf
+\definecolor{VoysBlue}{RGB}{39, 5, 151}
+\definecolor{ModernLime}{RGB}{74, 217, 56}
+\definecolor{Aqua}{RGB}{0, 255, 255}
+\definecolor{Coral}{RGB}{255, 77, 91}
+\definecolor{Ice}{RGB}{240, 240, 250}
+\definecolor{RegalFrost}{RGB}{183, 178, 248}
+\definecolor{RoyalBlue}{RGB}{59, 20, 185}
+
+% Hyperlinkstijl
+\hypersetup{
+  colorlinks,
+  citecolor=VoysBlue,
+  linkcolor=VoysBlue,
+  urlcolor=VoysBlue
+}
+
+% Bibliografie
+\addbibresource{refs.bib}
+\addbibresource{../globalrefs.bib}
+\setcounter{biburlnumpenalty}{1} % Zorgt ervoor dat urls afgebroken kunnen worden bij een nummer in de literatuurlijst
+
+% Titelpagina-info
+\title{Praktijkonderzoek dashboard Single Source of Truth}
+\author{Marijn Kok}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+
+\section{Inleiding}
+
+Voys is een bedrijf dat telecommunicatiesoftware ontwikkelt voor bedrijven. Met het product VoIPGRID kunnen bedrijven gemakkelijk klanten bereiken met behulp van internetbellen. Het bedrijf werkt met Holacratie, wat betekent dat je niet één functie hebt binnen het bedrijf, maar meerdere rollen kan vervullen binnen zogehete cirkels, wat een soort afdelingen zijn.
+
+Bij Voys worden veel servers gebruikt. Er is alleen een slecht overzicht van de hardware van die servers. Dit kan leiden tot misverstanden en onduidelijkheid. Er ontstond een behoefte binnen de infrastructuurcirkel voor een centrale plek waarop de hardware van de servers te zien is. Daarom was er een afstudeerstageopdracht opgesteld die zich richt op het maken van een dashboard waarop de hardware en netwerkinstellingen van de servers weergegeven wordt. Dit dashboard moest een \textit{Single Source of Truth} (afgekort SSOT) zijn. Dit betekent dat het dashboard altijd de nieuwste wijzigingen reflecteert.
+
+Voor dit dashboard zijn een aantal user stories voor het dashboard opgesteld \parencite{user_stories}. Deze user stories omschrijven de gewenste functionaliteiten van het dashboard. Het doel van dit onderzoek is om te onderzoeken of eindgebruikers met behulp van het gerealiseerde dashboard deze user stories daadwerkelijk kunnen uitvoeren. Om dit te onderzoeken is de volgende onderzoeksvraag opgesteld: ``In welke mate voldoet de SSOT-applicatie aan de opgestelde user stories?'', met als deelvraag: ``Waar zitten verbeterpunten bij de SSOT-applicatie?''
+
+\section{Onderzoeksmethoden}
+\label{sec:research_methods}
+
+Voor het onderzoek was gekozen om gebruik te maken van een survey en een case study. Data werd verzameld door middel van observatie en een enquête. Het onderzoek vond plaats in week 37 van 2023, op het kantoor van Voys, in een aparte ruimte.
+
+Drie medewerkers, waaronder één stakeholder, hadden meegedaan met dit onderzoek. Deze mensen waren gevraagd omdat zij rollen vervulden binnen de infrastructuurcirkel (de doelgroep van het product), en beschikbaar waren tijdens de periode dat het onderzoek uitgevoerd werd. Er is verder geen selectie gemaakt; iedereen die mee kon doen, heeft meegedaan.
+
+Voor het onderzoek was begonnen, was een database gemaakt met voorbeeldgegevens, zodat elke respondent met dezelfde data werkte. Dit bevordert de reproduceerbaarheid van het onderzoek. De gegevens uit de database zijn te vinden in \autoref{app:database}.
+
+Respondenten waren gevraagd om de usecases (te vinden in \autoref{app:usecases}) uit te voeren met de ontwikkelde SSOT-applicatie. Voordat ze hiermee begonnen kregen de respondenten een korte toelichting over hoe het onderzoek zou verlopen. Deze toelichting was in het Nederlands en in het Engels beschikbaar. De toelichting is te vinden in \autoref{app:toelichting}.
+
+De respondenten werden geobserveerd en er werd genoteerd welke usecases in welke mate succesvol waren uitgevoerd. Het beeldscherm werd opgenomen en gesprekken met de onderzoeker werden opgenomen en getranscribeerd. Achteraf werd de geluidsopname verwijderd. Gebruikers werden ook gevraagd toe te lichten wat hun gedachtegang was tijdens het uitvoeren van de usecases.
+
+Achteraf kregen de respondenten een enquête om toelichting te kunnen geven over hoe ze het programma als geheel ervaarden. De enquête is te vinden in \autoref{app:enquete}.
+
+Van tevoren was bekend dat van de vijftien user stories nummers 4, 5, 7, 11, en 14 niet geïmplementeerd waren. Hieruit volgt dat een maximum van 66,67\% van de user stories behaald kon worden. In dit onderzoek was daarom gefocust op de usecases die door bijbehorende requirements al waren geïmplementeerd.
+
+\section{Resultaten}
+
+De ruwe data is te vinden in \autoref{app:results}. Uit de resultaten bleek dat 100\% van de tien usecases behaald was. Alle respondenten hadden de optionele feedback ingevuld. Deze feedback is ook te vinden bij de ruwe data. Elke respondent had de zes usecases binnen 3 minuten en 48 seconden uitgevoerd. Hoewel één van de schermopnamen mislukte, kon nog steeds worden vastgesteld dat de usecase binnen deze tijd was voltooid.
+
+\section{Data-analyse}
+
+Gebruikers geven op een schaal nul tot vijf gemiddeld een waardering van 4,33 voor de gebruiksvriendelijkheid, een 4 voor het ontwerp en een 4 voor intuiïtiviteit. De gemiddelde waardering over alle drie de categorieën is 4,11. De mediaan en de modus zijn beide 4. De laagste waardering was een 3 op de ontwerp- en intuïtiviteitscategorie, en een waardering van 5 was op alle drie de categorieën gegeven.
+
+Op de audio-transcripties en de open feedbackvraag was een inhoudsanalyse toegepast. Op de categorieën gebruiksvriendelijkheid, ontwerp en intuïti\-viteit werd per zin het label ``compliment'' of ``feedback'' gegeven. De frequentie van het aantal zinnen per label werd opgeteld. De resultaten zijn te vinden in \autoref{tab:labels}.
+
+\subfile{assets/content_analysis_table.tex}
+
+Uit deze resultaten blijkt dat er meer complimenten waren gegeven dan feedback. De feedback die gegeven was, was voornamelijk gericht op het ontwerp van het dashboard. Gemiddeld werden er per persoon 2,67 complimenten gegeven en werd 1,67 keer feedback gegeven.
+
+\section{Discussie}
+
+Wat opvalt is dat het aantal respondenten laag was. De doelgroep van het project bestond echter slechts uit mensen die rollen binnen de infrastructuurcirkel vervulden, wat tijdens het onderzoek zeven mensen omvatte. Dit betekent dat ongeveer 43\% van de doelgroep ondervraagd is.
+
+Drie extra mensen hadden ook mee kunnen doen als het onderzoek in een andere periode was uitgevoerd. Het was echter niet mogelijk om het onderzoek eerder uit te voeren, omdat de SSOT-applicatie nog niet klaar was voor gebruik. Het onderzoek later uitvoeren was ook niet mogelijk vanwege de deadline van dit onderzoek.
+
+Het onderzoek moest verder op kantoor uitgevoerd worden, omdat de applicatie nog niet deployed was. Daardoor kon één ander persoon ook niet meedoen met het onderzoek. Het was mogelijk geweest om mensen buiten de infrastructuurcirkel te vragen, maar het was niet zeker of hun feedback relevant zou zijn voor het product. Er was daarom gekozen om alleen mensen uit de infrastructuurcirkel te vragen.
+
+Tenslotte betekent het 100\% slagingspercentage van de usecases niet dat alle user stories behaald zijn. Zoals in \autoref{sec:research_methods} benoemd is, zijn vijf user stories niet geïmplementeerd.
+
+\section{Conclusie}
+
+Uit dit onderzoek blijkt dat de SSOT-applicatie 66.67\% voldoet aan de opgestelde user stories. De SSOT-applicatie zou verbeterd kunnen worden door de missende user stories te implementeren en de feedback van de respondenten te verwerken. Dit onderzoek draagt niet direct bij aan het verbeteren van de SSOT-applicatie, maar de resultaten kunnen wel gebruikt worden om de applicatie te verbeteren. De kwaliteit van de SSOT-applicatie is hierdoor inzichtelijker gemaakt.
+
+\section{Aanbevelingen}
+
+Voor toekomstig onderzoek wordt aanbevolen om meer respondenten te ondervragen. Ook wordt aanbevolen om het onderzoek uit te voeren wanneer het product al deployed is, zodat het onderzoek ook op afstand uitgevoerd kan worden. Hierdoor kunnen nog meer mensen bereikt worden voor het onderzoek.
+
+Verder wordt het aanbevolen om de user stories die niet geïmplementeerd zijn alsnog te implementeren. Deze kunnen vervolgens ook onderzocht worden door dit onderzoek opnieuw uit te voeren met uitgebreide usecases.
+
+\nocite{good_research_guide}
+\nocite{handreiking_aanpak_en_onderzoek}
+\printbibliography
+
+\appendix
+
+\section{Database}
+\label{app:database}
+
+De database is te vinden in Bijlagen/onderzoek/db.sql.
+
+\section{Usecases}
+\label{app:usecases}
+De usecases zijn gebaseerd op de user stories. Deze staan in een apart document \parencite{user_stories}.
+
+De usecases zijn te vinden in Bijlagen/onderzoek/usecases.pdf.
+
+\section{Toelichting voorafgaand aan het onderzoek}
+\label{app:toelichting}
+
+\subsection*{Nederlands} ``Het onderzoek gaat als volgt in zijn werking: Er zullen zes usecases voorgelegd worden die je moet proberen te voltooien. De onderzoeker zal per usecase aangeven wanneer deze succesvol voltooid is. Als het je niet lukt, kan je dit zelf aangeven. Dit proces wordt herhaald voor elke usecase. Je mag vragen stellen over het product, maar de onderzoeker kan niet helpen met het uitvoeren van de usecases. Deel alsjeblieft ook je gedachtegang tijdens het uitvoeren van de usecases. Achteraf zal er een survey zijn waar je kan aangeven wat je van het dashboard vond. Het onderzoek wordt opgenomen met behulp van video- en geluidsfragmenten. De geluidsfragmenten worden getranscribeerd en enige persoonlijk identificeerbare informatie wordt verwijderd. Vervolgens wordt de geluidsopname verwijderd. Als je hier akkoord mee bent zal de opname gestart worden en kan het onderzoek beginnen.''
+
+\subsection*{Engels} ``The research will proceed as follows: You will be presented with six use cases that you must try to complete. The researcher will notify you when a use case has been successfully completed. If you are unable to complete a use case, you can indicate this yourself. This process is repeated for each use case. You can ask questions about the product, but the researcher cannot help carry out the use cases. Please also share your thought process while executing the use cases. Afterwards there will be a survey where you can share what you thought of the dashboard. The research is recorded using screen capturing and audio recording. The audio recordings are transcribed and any personally identifiable information will be removed. The audio recording is then deleted. If you agree to this, the recording will start and the research will commence.''
+
+\section{Enquête}
+\label{app:enquete}
+
+De enquête is te vinden in Bijlagen/onderzoek/enquete.pdf.
+
+\section{Ruwe data}
+\label{app:results}
+
+De ruwe data is te vinden in de map Bijlagen/onderzoek/data/.
+
+\end{document}
