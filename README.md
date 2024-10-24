@@ -11,9 +11,10 @@ Verantwoordingsverslag en bijlagen voor het afstuderen bij [Voys](https://www.vo
 
 - latexmk
 - biber
+- texlive-bibtex-extra
 - texlive
 - texlive-lang-european
-- texlive-bibtex-extra
+- texlive-latex-extra
 - _(optioneel)_ chktex
 
 ```bash
